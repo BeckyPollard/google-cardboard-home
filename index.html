@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Google Cardboard VR Exercise #1 - Created with A-Frame" />
+    <title>Home Sweet Home</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="js/aframe-particle-system-component.min.js"></script>
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--CREDITS-->
+    <div id="desc">
+        <p>Free models aquired from <a href="http://tf3dm.com/3d-model/blender-lowpoly-nature-assets-pack-36502.html" target="_blank">TF3DM</a> and <a href="https://www.turbosquid.com/3d-models/house-home-max-free/567317" target="_blank">TurboSquid</a>.</p>
+        <p>Models created and/or edited with <a href="https://www.blender.org/" target="_blank">Blender</a>.</p>
+        <p>This <a href="https://aframe.io/" target="_blank">A-Frame</a> scene is an experiment by <a href="http://www.beckypollard.com" target="_blank">Becky Pollard.</a></p>
+        <span id="toggle"><img src="images/toggle.svg" /></span>
+    </div>
+    <!--A-FRAME-->
+    <a-scene>
+        <!--ASSETS-->
+        <a-assets>
+            <a-asset-item id="tree1" src="models/tree1.dae"></a-asset-item>
+            <a-asset-item id="tree2" src="models/tree2.dae"></a-asset-item>
+            <a-asset-item id="rock" src="models/rock1.dae"></a-asset-item>
+            <a-asset-item id="grass" src="models/grass.dae"></a-asset-item>
+            <a-asset-item id="house" src="models/house.dae"></a-asset-item>
+            <a-asset-item id="grave" src="models/grave.dae"></a-asset-item>
+            <img id="background" src="images/gradient.png" />
+        </a-assets>
+        <!--LIGHTS & CAMERAS-->
+        <a-camera position="-1.67 -.4 4" rotation="-8 -55 0"></a-camera>
+        <!--PROPERTY ITEMS-->
+        <a-entity id="house-1" collada-model="#house" position="7.5 0 0" scale="30 30 30"></a-entity>
+        <a-box id="stepstone1" position="4 0.07 0.4" rotation="0 90 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone2" position="3 0.07 0.4" rotation="0 100 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone3" position="2 0.07 0.4" rotation="0 90 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone4" position="1 0.07 0.4" rotation="0 110 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone5" position="0 0.07 1" rotation="0 130 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone6" position="-0.8 0.07 2" rotation="0 140 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone7" position="-1.4 0.07 2.8" rotation="0 150 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone8" position="-1.8 0.07 3.75" rotation="0 160 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone9" position="-2.1 0.07 4.9" rotation="0 180 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone10" position="-1.9 0.07 6.1" rotation="0 200 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone11" position="-1.4 0.07 7.3" rotation="0 210 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone12" position="-.6 0.07 8.3" rotation="0 215 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone13" position=".3 0.07 9.4" rotation="0 205 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="stepstone14" position=".7 0.07 10.6" rotation="0 180 0" width=".9" height=".05" depth=".4" color="#3f3923"></a-box>
+        <a-box id="grave" collada-model="#grave" position="-6.45 0.02 4.5" scale=".017 .017 .017" rotation="0 190 0"></a-box>
+        <!--TREES-->
+        <a-entity id="tree1-1" collada-model="#tree1" position="2 0 -5.80" rotation="0 -60 0" scale="1.5 1.5 1.5"></a-entity>
+        <a-entity id="tree1-2" collada-model="#tree1" position="-2 0 -1.52" rotation="0 130 0" scale="1.3 1.3 1.3"></a-entity>
+        <a-entity id="tree1-3" collada-model="#tree1" position=".5 0 6.5" rotation="0 40 0" scale="1.7 1.9 1.7"></a-entity>
+        <a-entity id="tree2-1" collada-model="#tree2" position="7 0 7" rotation="0 20 0" scale="1 1 1"></a-entity>
+        <a-entity id="tree2-2" collada-model="#tree2" position="-4.3 0 12.5" rotation="0 -10 0" scale="1.5 1.5 1.5"></a-entity>
+        <a-entity id="tree2-3" collada-model="#tree2" position="-8 0 3" rotation="0 0 0" scale="1 1 1"></a-entity>
+        <a-entity id="tree2-3" collada-model="#tree2" position="-8 0 6" rotation="0 0 0" scale="1.3 1.3 1.3"></a-entity>
+        <!--ROCKS-->
+        <a-entity id="rock1" collada-model="#rock" position="-2 0.15 -4" rotation="0 0 0" scale="1 1 1"></a-entity>
+        <a-entity id="rock2" collada-model="#rock" position="-7.8 0 9.3" rotation="0 80 0" scale="1.4 1.4 1.4"></a-entity>
+        <a-entity id="rock3" collada-model="#rock" position="-5.5 0.05 6" rotation="0 0 0" scale=".6 .6 .6"></a-entity>
+        <!--PLANTS-->
+        <a-entity id="grass-1" collada-model="#grass" position="4.5 0.2 -1" rotation="0 0 0"></a-entity>
+        <a-entity id="grass-2" collada-model="#grass" position="6 0.2 3.7" rotation="0 180 0"></a-entity>
+        <a-entity id="grass-3" collada-model="#grass" position="-6 0.2 -3" rotation="0 0 0"></a-entity>
+        <a-entity id="grass-4" collada-model="#grass" position="-3 0.2 9" rotation="0 50 0"></a-entity>
+        <a-entity id="grass-5" collada-model="#grass" position="-4 0.2 8" rotation="0 50 0"></a-entity>
+        <a-entity id="grass-6" collada-model="#grass" position="5 0.2 -1" rotation="0 30 0"></a-entity>
+        <a-entity id="grass-7" collada-model="#grass" position="2.5 0.2 -4" rotation="0 70 0"></a-entity>
+        <a-entity id="grass-8" collada-model="#grass" position="1 0.2 4.6" rotation="0 20 0"></a-entity>
+        <a-entity id="grass-9" collada-model="#grass" position="1 0.2 10" rotation="0 90 0"></a-entity>
+        <a-entity id="grass-10" collada-model="#grass" position="2 0.2 10.3" rotation="0 340 0"></a-entity>
+        <a-entity id="grass-11" collada-model="#grass" position="5.5 0.2 8" rotation="0 5 0"></a-entity>
+        <a-entity id="grass-12" collada-model="#grass" position="-5.5 0.2 5" rotation="0 180 0"></a-entity>
+        <a-entity id="grass-13" collada-model="#grass" position="-3.5 0.2 1.5" rotation="0 0 0"></a-entity>
+        <a-entity id="grass-14" collada-model="#grass" position="-7.7 0.2 2" rotation="0 340 0"></a-entity>
+        <a-entity id="grass-14" collada-model="#grass" position="-1 0.2 -7" rotation="0 110 0"></a-entity>
+        <a-entity id="grass-15" collada-model="#grass" position="-1.33 0.2 1.85" rotation="0 -170 0"></a-entity>
+        <a-cylinder id="lawn" radius="10" height="1" position="1 -0.44 1" material="shader: flat" color="#0d4e00"></a-cylinder>
+        <!--ENVIRONMENT-->
+        <a-cylinder id="stage" radius="10.25" height="1" position="1 -0.57 1" color="#535353"></a-cylinder>
+        <a-entity id="stars" particle-system="color: #EF0000,#44CC00; preset: dust; type: 2; particleCount: 2500; size: .5"></a-entity>
+        <a-sky src="#background"></a-sky>
+    </a-scene>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/*██████████▌GLOBAL▐████████████████████████████████████████████████*/
+/*▒▒▒▒▒▒▒▒▒▒ FONTS ▒▒▒▒▒▒▒▒▒▒*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+/*▒▒▒▒▒▒▒▒▒▒ TYPOGRAPHY ▒▒▒▒▒▒▒▒▒▒*/
+p {
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 12px;
+}
+/*██████████▌OVERRIDES▐█████████████████████████████████████████████*/
+/*▒▒▒▒▒▒▒▒▒▒ PLUGIN NAME ▒▒▒▒▒▒▒▒▒▒*/
+
+/*██████████▌ANIMATION▐█████████████████████████████████████████████*/
+
+/*██████████▌LAYOUT▐████████████████████████████████████████████████*/
+body {
+    background-color: #000;
+}
+#desc {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -115px;
+    left: 10px;
+    width: 200px;
+    padding: 10px 10px;
+    text-align: center;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    z-index: 9999;
+}
+#desc:hover {
+    top: 0;
+    left: 10px;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+#desc p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+#desc p a:hover {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+#toggle img {
+    height: 25px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+/*██████████▌RESPONSIVE▐████████████████████████████████████████████*/
+
+@media (max-width: 740px) {
+    #desc {
+        display: none;
+    }
+}
